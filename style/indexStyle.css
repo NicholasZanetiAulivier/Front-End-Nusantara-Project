@@ -1,0 +1,49 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+body {
+    height: fit-content;
+}
+
+#topnavbar {
+    display: flex;
+    width: 100vw;
+    height: fit-content;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #8b3f00;
+}
+
+#topnavbar * {
+    color: #FFFFFF;
+    font-size: 24px;
+}
+
+#navtitle {
+    display: block;
+    cursor: pointer;
+}
+
+#navtitle img {
+    height: 100px;
+}
+
+#topnavbar>ul {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+}
+
+#topnavbar>ul li a {
+    display: block;
+    height: fit-content;
+    width: fit-content;
+    cursor: pointer;
+    padding: 10px;
+}
