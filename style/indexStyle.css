@@ -17,7 +17,9 @@ body {
     height: fit-content;
     justify-content: space-around;
     align-items: center;
-    background-color: #8b3f00;
+    background-color: #502400;
+    position: absolute;
+    z-index: 1000;
 }
 
 #topnavbar * {
@@ -46,4 +48,28 @@ body {
     width: fit-content;
     cursor: pointer;
     padding: 10px;
+}
+
+#carousel {
+    --width: 100vw;
+    --height: 700px;
+    width: var(--width);
+    height: var(--height);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#carousel img {
+    width: var(--width);
+    height: var(--height);
+    object-fit: cover;
+    transition: 1s;
+    filter: brightness(50%);
+    position: absolute;
+}
+
+#carousel div {
+    z-index: 10;
+    color: #FFFFFF;
 }
