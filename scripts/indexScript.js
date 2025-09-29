@@ -1,14 +1,14 @@
 function main() {
     var carousel = $(`#carousel img`);
     carousel[0].style.opacity = 1;
-    doCarouselLoop();
+    doCarouselLoop(carousel);
 
     window.onscroll = processScroll;
 }
 
 
 
-async function doCarouselLoop() {
+async function doCarouselLoop(carousel) {
     var counter = 0;
     var len = carousel.length;
     setInterval(r => {

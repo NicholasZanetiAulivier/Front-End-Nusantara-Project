@@ -1,0 +1,15 @@
+@font-face {
+    font-family: 'Choco';
+    src:
+        url(../fonts/chocoRaindrops/Choco.ttf), url(../fonts/chocoRaindrops/ChocoHollow.ttf), url(../fonts/chocoRaindrops/ChocoBold.ttf);
+}
+
+@font-face {
+    font-family: 'Bavista';
+    src: url(../fonts/bavista/Bavista.ttf);
+}
+
+@font-face {
+    font-family: 'Berkshire';
+    src: url(../fonts/berkshire/BerkshireSwash-Regular.ttf);
+}
