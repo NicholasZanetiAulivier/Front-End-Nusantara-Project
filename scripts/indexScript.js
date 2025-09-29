@@ -1,9 +1,5 @@
 var carousel = $(`#carousel img`);
-console.log(carousel);
-
-for (var i of carousel) {
-    i.style.opacity = 0;
-}
+carousel[0].style.opacity = 1;
 
 doCarouselLoop();
 

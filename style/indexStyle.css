@@ -1,3 +1,14 @@
+@font-face {
+    font-family: 'Choco';
+    src:
+        url(../fonts/chocoRaindrops/Choco.ttf), url(../fonts/chocoRaindrops/ChocoHollow.ttf), url(../fonts/chocoRaindrops/ChocoBold.ttf);
+}
+
+@font-face {
+    font-family: 'Bavista';
+    src: url(../fonts/bavista/Bavista.ttf);
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -67,9 +78,28 @@ body {
     transition: 1s;
     filter: brightness(50%);
     position: absolute;
+    opacity: 0;
 }
 
 #carousel div {
     z-index: 10;
     color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    line-height: 80px;
+    text-shadow: 0 0 29px #FFFFFF;
+}
+
+#carousel div span:first-of-type {
+    font-size: 50px;
+    font-family: 'Choco';
+    font-weight: bold;
+}
+
+#carousel div span:last-of-type {
+    font-size: 100px;
+    font-family: 'Bavista';
+    margin: 0;
 }
