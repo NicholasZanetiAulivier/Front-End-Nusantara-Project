@@ -20,6 +20,7 @@ html {
 
 body {
     height: fit-content;
+    background-color: #1d0d00;
 }
 
 #topnavbar {
@@ -29,8 +30,9 @@ body {
     justify-content: space-around;
     align-items: center;
     background-color: #502400;
-    position: absolute;
+    position: fixed;
     z-index: 1000;
+    transition: 0.5s ease-out;
 }
 
 #topnavbar * {
@@ -44,7 +46,8 @@ body {
 }
 
 #navtitle img {
-    height: 100px;
+    height: 80px;
+    padding: 5px;
 }
 
 #topnavbar>ul {
@@ -76,7 +79,7 @@ body {
     height: var(--height);
     object-fit: cover;
     transition: 1s;
-    filter: brightness(50%);
+    filter: brightness(50%) blur(5px);
     position: absolute;
     opacity: 0;
 }
@@ -89,7 +92,7 @@ body {
     align-items: center;
     text-align: center;
     line-height: 80px;
-    text-shadow: 0 0 29px #FFFFFF;
+    text-shadow: 0 0 30px #FFFFFF;
 }
 
 #carousel div span:first-of-type {
@@ -102,4 +105,21 @@ body {
     font-size: 100px;
     font-family: 'Bavista';
     margin: 0;
+}
+
+#featured {
+    width: 100vw;
+    height: 500px;
+    padding-top: 30px;
+    background-color: #FFFFFF;
+    display: block;
+    position: initial;
+}
+
+#featured .partTitle {
+    display: block;
+    margin: auto;
+    width: fit-content;
+    font-size: 60px;
+    font-weight: bold;
 }

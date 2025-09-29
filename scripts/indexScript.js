@@ -1,7 +1,12 @@
-var carousel = $(`#carousel img`);
-carousel[0].style.opacity = 1;
+function main() {
+    var carousel = $(`#carousel img`);
+    carousel[0].style.opacity = 1;
+    doCarouselLoop();
 
-doCarouselLoop();
+    window.onscroll = processScroll;
+}
+
+
 
 async function doCarouselLoop() {
     var counter = 0;
@@ -13,3 +18,18 @@ async function doCarouselLoop() {
         console.log(counter);
     }, 5000);
 }
+
+function processScroll() {
+    processNavbarScroll($(`#topnavbar`)[0]);
+}
+
+function processNavbarScroll(navbar) {
+    console.log(navbar);
+    if (!(document.body.scrollTop > 100 || document.documentElement.scrollTop > 100)) {
+        navbar.style.top = "0";
+    } else {
+        navbar.style.top = "-100px";
+    }
+}
+
+main();
