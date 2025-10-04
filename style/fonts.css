@@ -13,3 +13,16 @@
     font-family: 'Berkshire';
     src: url(../fonts/berkshire/BerkshireSwash-Regular.ttf);
 }
+
+@font-face {
+    font-family: 'Manrope';
+    src:
+        url(../fonts/manrope/manrope-bold.otf),
+        url(../fonts/manrope/manrope-extrabold.otf),
+        url(../fonts/manrope/manrope-light.otf),
+        url(../fonts/manrope/manrope-medium.otf),
+        url(../fonts/manrope/manrope-regular.otf),
+        url(../fonts/manrope/manrope-semibold.otf),
+        url(../fonts/manrope/manrope-thin.otf),
+    ;
+}

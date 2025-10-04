@@ -16,7 +16,10 @@ html {
 
 body {
     height: fit-content;
-    background-color: #1d0d00;
+    background-image: url(../rsc/batikBG.jpg);
+    background-blend-mode: darken;
+    background-color: #502400;
+    font-family: 'Manrope';
 }
 
 #topnavbar {
@@ -29,6 +32,9 @@ body {
     position: fixed;
     z-index: 1000;
     transition: 0.5s ease-out;
+    background-image: url("../rsc/batik.jpg");
+    background-repeat: no-repeat;
+    background-position: 0px -300px;
 }
 
 #topnavbar * {
@@ -135,7 +141,7 @@ body {
     width: 100vw;
     height: 500px;
     padding-top: 30px;
-    background-color: #FFFFFF;
+    background-color: #ffffffde;
     display: block;
     position: initial;
 }
@@ -184,6 +190,29 @@ body {
     transition: 0.5s ease-out;
 }
 
+.featuredItems .items .tags {
+    width: var(--width-size);
+    z-index: 11;
+    height: var(--height-size);
+    position: absolute;
+    display: flex;
+    justify-content: end;
+    align-items: start;
+    box-sizing: border-box;
+    padding: 10px;
+    gap: 10px
+}
+
+.featuredItems .items .tags .tag {
+    color: #FFFFFF;
+    text-shadow: 0 0 10px #FFFFFF;
+    background-color: #000000;
+    border: 1px #FFFFFF solid;
+    padding: 5px;
+    border-radius: 20px;
+    width: fit-content;
+}
+
 .featuredItems .items .itemText {
     padding: 20px;
     width: auto;
@@ -200,13 +229,14 @@ body {
     color: #FFFFFF;
     font-weight: bold;
     font-size: 50px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-shadow: var(--onepx-shadow);
 }
 
 .featuredItems .items .itemDescription {
     position: relative;
     color: #FFFFFF;
-    font-size: 16px;
+    font-size: 12px;
     transition: 0.5s ease-out;
     opacity: 0;
 }
