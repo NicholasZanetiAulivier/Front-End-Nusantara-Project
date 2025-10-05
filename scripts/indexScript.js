@@ -1,12 +1,14 @@
+var buttonState = false;
 function main() {
     var carousel = $(`#carousel img`);
     carousel[0].style.opacity = 1;
     doCarouselLoop(carousel);
 
     window.onscroll = processScroll;
+    addEventListenerToFilterButton();
 }
 
-
+const TOPNAVBAR_LIMIT = 150;
 
 async function doCarouselLoop(carousel) {
     var counter = 0;
@@ -25,11 +27,22 @@ function processScroll() {
 
 function processNavbarScroll(navbar) {
     console.log(navbar);
-    if (!(document.body.scrollTop > 100 || document.documentElement.scrollTop > 100)) {
+    if (!(document.body.scrollTop > TOPNAVBAR_LIMIT || document.documentElement.scrollTop > TOPNAVBAR_LIMIT)) {
         navbar.style.top = "0";
     } else {
-        navbar.style.top = "-100px";
+        navbar.style.top = `-${TOPNAVBAR_LIMIT}px`;
     }
+}
+
+function addEventListenerToFilterButton() {
+    $(`#enableFilters`).on('click', () => {
+        buttonState = !buttonState;
+        $('#enableFiltersImg').attr(
+            'src',
+            buttonState ? 'rsc/filter_filled.png' : 'rsc/filter_outline.png'
+        );
+        $(`.filters`).css('height', buttonState ? '200px' : '0');
+    });
 }
 
 main();

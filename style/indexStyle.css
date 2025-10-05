@@ -12,6 +12,7 @@
 
 html {
     overflow-x: hidden;
+    width: 100vw;
 }
 
 body {
@@ -20,6 +21,11 @@ body {
     background-blend-mode: darken;
     background-color: #502400;
     font-family: 'Manrope';
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
 }
 
 #topnavbar {
@@ -137,6 +143,8 @@ body {
     text-shadow: 0 0 20px #1d0d00;
 }
 
+/*Featured Items container*/
+
 #featured {
     width: 100vw;
     height: 500px;
@@ -146,7 +154,7 @@ body {
     position: initial;
 }
 
-.partTitle {
+#featured .partTitle {
     display: block;
     margin: auto;
     width: fit-content;
@@ -253,4 +261,180 @@ body {
 
 .featuredItems .items:hover .itemDescription {
     opacity: 1;
+}
+
+
+/*Random Facts Container*/
+
+#randomFacts {
+    background-color: #ffffffec;
+    height: fit-content;
+    width: inherit;
+}
+
+#randomFacts .partTitle {
+    display: block;
+    margin: auto;
+    padding-top: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 5px;
+    font-size: 32px;
+    width: 1000px;
+    height: fit-content;
+    border-bottom: #000000 1px solid;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+
+#randomFacts .facts {
+    width: auto;
+    height: fit-content;
+    margin-top: 30px;
+}
+
+#randomFacts .facts .row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+    margin: auto;
+    width: 100%;
+}
+
+#randomFacts .facts .row>div {
+    width: 650px;
+    height: 650px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#randomFacts .facts .row .left img {
+    aspect-ratio: 4/3;
+    object-fit: cover;
+    margin-bottom: 10px;
+    width: 100%;
+    border: #000000 1px solid;
+    border-radius: 20px;
+}
+
+#randomFacts .facts .row .left .description {
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 22px;
+    text-align: justify;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#randomFacts .facts .row .right {
+    justify-content: space-between;
+    align-items: center;
+}
+
+#randomFacts .facts .row .right .cell {
+    height: 210px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+#randomFacts .facts .row .right .cell img {
+    height: 100%;
+    aspect-ratio: 4/3;
+    object-fit: cover;
+    border: #000000 1px solid;
+    border-radius: 20px;
+}
+
+/*Search section*/
+
+#search {
+    background-color: #FFFFFF;
+    height: fit-content;
+    width: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#search>* {
+    margin: auto;
+    display: block;
+}
+
+#search .partTitle {
+    font-size: 40px;
+}
+
+#search .searchParams {
+    height: fit-content;
+}
+
+
+#search .searchParams .searchByName {
+    display: flex;
+    width: fit-content;
+    height: fit-content;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+}
+
+#search .searchParams .searchByName #searchInput {
+    font-size: 18px;
+    padding: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 5px;
+}
+
+#search .searchParams .searchByName #enableFilters {
+    background-color: #00000000;
+    border: none;
+    height: 40px;
+}
+
+#search .searchParams .searchByName #enableFilters img {
+    height: inherit;
+}
+
+#search .searchParams .filters {
+    display: flex;
+    overflow-y: hidden;
+    flex-direction: column;
+    width: fit-content;
+    height: 0;
+    gap: 10px;
+    background-color: antiquewhite;
+    transition: 0.5s;
+}
+
+#search .searchParams .filters .inputField {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+#search .searchParams .filters .inputField label,
+#search .searchParams .filters .inputField input,
+#search .searchParams .filters .inputField div {
+    width: 400px;
+    margin: 0;
+}
+
+#search .searchParams .filters .inputField .location {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 0;
 }
