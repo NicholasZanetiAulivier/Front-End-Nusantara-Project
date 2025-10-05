@@ -87,6 +87,7 @@
         </div>
     </div>
 
+    <!-- remake this -->
     <div id="randomFacts">
         <div class="partTitle">Eksplorasi Artikel</div>
         <div class="facts">
@@ -147,63 +148,79 @@
         </div>
     </div>
 
-    <div id="search">
-        <div class="partTitle">Cari Suku</div>
-        <div class="searchParams">
-            <div class="searchByName">
-                <input type="text" name="searchInput" id="searchInput">
-                <button id="enableFilters">
-                    <img src="rsc/filter_outline.png" id="enableFiltersImg">
-                </button>
-            </div>
-            <div class="filters">
-                <div class="inputField">
-                    <label for="weapons">Senjata Tradisional</label>
-                    <input type="text" name="weapons" id="weapons">
+    <div id="searchAndResults">
+        <div class="partTitle">&#128607;&#128602;Cari Suku&#128601;&#128604;</div>
+        <div class="row">
+            <div id="search">
+                <div class="searchByName">
+                    <input type="text" name="searchInput" id="searchInput" placeholder="Nama Suku">
+                    <button id="enableFilters">
+                        <img src="rsc/filter_outline.png" id="enableFiltersImg">
+                    </button>
                 </div>
-                <div class="inputField">
-                    <label for="dance">Tarian Tradisional</label>
-                    <input type="text" name="dance" id="dance">
-                </div>
-                <div class="inputField">
-                    <label for="clothes">Pakaian Adat</label>
-                    <input type="text" name="clothes" id="clothes">
-                </div>
-                <div class="inputField">
-                    <label for="house">Rumah Adat</label>
-                    <input type="text" name="house" id="house">
-                </div>
-                <div class="inputField">
-                    <label for="location">Daerah</label>
-                    <div class="location">
-                        <button>place1</button>
-                        <button>place1</button>
-                        <button>place1</button>
-                        <button>place1</button>
-                        <button>place1</button>
-                        <button>place1</button>
-                        <button>place1</button>
-                        <button>place1</button>
-                        <button>place1</button>
-                        <button>place1</button>
-                        <button>place1</button>
-                        <button>place1</button>
-                        <button>place1</button>
-                        <button>place1</button>
-                        <button>place1</button>
+                <div class="filters">
+                    <div class="inputField">
+                        <label for="weapons">Senjata Tradisional</label>
+                        <input type="text" name="weapons" id="weapons">
+                    </div>
+                    <div class="inputField">
+                        <label for="dance">Tarian Tradisional</label>
+                        <input type="text" name="dance" id="dance">
+                    </div>
+                    <div class="inputField">
+                        <label for="clothes">Pakaian Adat</label>
+                        <input type="text" name="clothes" id="clothes">
+                    </div>
+                    <div class="inputField">
+                        <label for="house">Rumah Adat</label>
+                        <input type="text" name="house" id="house">
+                    </div>
+                    <div class="inputField">
+                        <label for="food">Kuliner</label>
+                        <input type="text" name="food" id="food">
+                    </div>
+                    <div class="inputField">
+                        <label for="misc">Lainnya</label>
+                        <input type="text" name="misc" id="misc">
+                    </div>
+
+
+                    <div class="inputField">
+                        <label for="location">Daerah</label>
+                        <div class="location">
+                            <button>Place1</button>
+                            <button>Place1</button>
+                            <button>Place1</button>
+                            <button>Place1</button>
+                            <button>Place1</button>
+                            <button>Place1</button>
+                            <button>Place1</button>
+                            <button>Place1</button>
+                            <button>Place1</button>
+                            <button>Place1</button>
+                            <button>Place1</button>
+                            <button>Place1</button>
+                        </div>
+                    </div>
+
+                    <div class="inputField">
+                        <label for="sort">Urutkan</label>
+                        <div class="sort">
+                            <button>A-Z</button>
+                            <button>Z-A</button>
+                        </div>
                     </div>
                 </div>
-
             </div>
-        </div>
-        <div class="results">
-            <div class="items">
-                <img src="rsc/batikBG.jpg">
-                <span class="title">Suku Title</span>
-                <div class="description">Suku desc</div>
+            <div id="results">
+                <span>Hello World</span>
             </div>
         </div>
     </div>
+
+    <footer>
+
+    </footer>
 </body>
 
 </html>

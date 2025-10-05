@@ -351,43 +351,62 @@ a {
     border-radius: 20px;
 }
 
+#searchAndResults {
+    --left-right-pad: 300px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-image: linear-gradient(to right, #ffffffda 0%, #FFFFFF 50%, #FFFFFFda 100%);
+    box-sizing: border-box;
+    padding-left: var(--left-right-pad);
+    padding-right: var(--left-right-pad);
+    min-height: 1000px;
+}
+
+#searchAndResults .partTitle {
+    --left-right-pad: 50px;
+    font-size: 40px;
+    border-bottom: #1d0d00 1px solid;
+    margin-bottom: 20px;
+    text-shadow: 0 0 20px #744201;
+    padding-left: var(--left-right-pad);
+    padding-right: var(--left-right-pad);
+}
+
+#searchAndResults .row {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    gap: 5px;
+}
+
 /*Search section*/
 
 #search {
-    background-color: #FFFFFF;
+    --left-right-pad: 20px;
     height: fit-content;
-    width: auto;
-    padding-top: 10px;
-    padding-bottom: 10px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    align-items: start;
+    box-sizing: border-box;
+    padding-left: var(--left-right-pad);
+    padding-right: var(--left-right-pad);
 }
 
 #search>* {
-    margin: auto;
     display: block;
 }
 
-#search .partTitle {
-    font-size: 40px;
-}
 
-#search .searchParams {
-    height: fit-content;
-}
-
-
-#search .searchParams .searchByName {
+#search .searchByName {
     display: flex;
     width: fit-content;
     height: fit-content;
+    padding-left: 10px;
     gap: 5px;
     justify-content: center;
-    align-items: center;
+    align-items: start;
 }
 
-#search .searchParams .searchByName #searchInput {
+#search .searchByName #searchInput {
     font-size: 18px;
     padding: 10px;
     padding-left: 10px;
@@ -395,46 +414,99 @@ a {
     border-radius: 5px;
 }
 
-#search .searchParams .searchByName #enableFilters {
+#search .searchByName #enableFilters {
     background-color: #00000000;
     border: none;
     height: 40px;
 }
 
-#search .searchParams .searchByName #enableFilters img {
+#search .searchByName #enableFilters img {
     height: inherit;
 }
 
-#search .searchParams .filters {
+#search .filters {
+    --left-right-pad: 10px;
     display: flex;
     overflow-y: hidden;
     flex-direction: column;
     width: fit-content;
-    height: 0;
+    height: fit-content;
     gap: 10px;
-    background-color: antiquewhite;
-    transition: 0.5s;
+    transition: 0.5s ease-out;
+    margin-top: 10px;
+    border-bottom: #502400b7 1px solid;
+    padding: 0;
+    padding-left: var(--left-right-pad);
+    padding-right: var(--left-right-pad);
 }
 
-#search .searchParams .filters .inputField {
+#search .filters .inputField {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    width: 100%;
-}
-
-#search .searchParams .filters .inputField label,
-#search .searchParams .filters .inputField input,
-#search .searchParams .filters .inputField div {
     width: 400px;
-    margin: 0;
 }
 
-#search .searchParams .filters .inputField .location {
+#search .filters .inputField label,
+#search .filters .inputField input,
+#search .filters .inputField div {
+    width: 300px;
+    box-sizing: border-box;
+    margin: 0;
+    font-size: 16px;
+}
+
+#search .filters .inputField label {
+    width: 220px;
+}
+
+#search .filters .inputField input {
+    padding: 2px;
+}
+
+#search .filters .inputField div {
+    padding-left: 0;
+}
+
+#search .filters .inputField div button {
+    font-size: 16px;
+    font-weight: bold;
+    width: fit-content;
+    height: fit-content;
+    padding: 5px 10px;
+    margin: 2px 0;
+    border: #a1a1a1 1px solid;
+    background-color: #ffffffd0;
+    color: #a1a1a1;
+    border-radius: 20px;
+}
+
+#search .filters .inputField .location,
+#search .filters .inputField .sort {
     display: flex;
     flex-wrap: wrap;
-    align-content: flex-start;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: space-between;
     margin: 0;
+}
+
+#search .filters .inputField .sort {
+    justify-content: start;
+}
+
+#search .filters .inputField .sort button {
+    margin-right: 5px;
+}
+
+/*Results*/
+#results {
+    border-left: #0000005b 1px solid;
+    box-sizing: border-box;
+    padding-left: 10px;
+}
+
+footer {
+    height: 200px;
+    background-color: #502400;
+    width: 100%;
 }

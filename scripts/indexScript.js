@@ -1,4 +1,4 @@
-var buttonState = false;
+var buttonState = true;
 function main() {
     var carousel = $(`#carousel img`);
     carousel[0].style.opacity = 1;
@@ -35,14 +35,18 @@ function processNavbarScroll(navbar) {
 }
 
 function addEventListenerToFilterButton() {
+    const height = $(`.filters`).innerHeight() + 10;
     $(`#enableFilters`).on('click', () => {
         buttonState = !buttonState;
         $('#enableFiltersImg').attr(
             'src',
             buttonState ? 'rsc/filter_filled.png' : 'rsc/filter_outline.png'
         );
-        $(`.filters`).css('height', buttonState ? '200px' : '0');
+        $(`.filters`).css('height', buttonState ? `${height}px` : '0');
+        $(`.filters`).css('padding-top', buttonState ? '5px' : '0');
+        $(`.filters`).css('padding-bottom', buttonState ? '5px' : '0');
     });
+    $(`#enableFilters`).click();
 }
 
 main();
