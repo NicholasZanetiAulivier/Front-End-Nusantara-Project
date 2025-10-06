@@ -1,0 +1,152 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    overflow-x: hidden;
+    width: 100vw;
+}
+
+body {
+    height: fit-content;
+    background-image: url(../rsc/batikBG.jpg);
+    background-blend-mode: darken;
+    background-color: #502400;
+    font-family: 'Manrope';
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+#topnavbar {
+    position: fixed;
+    width: 100vw;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #502400;
+    z-index: 1000;
+    background-image: url("../rsc/batik.jpg");
+    background-repeat: no-repeat;
+    background-position: 0px -300px;
+}
+
+#topnavbar a img {
+    height: 80px;
+    padding: 0;
+}
+
+#content {
+    width: 100%;
+    height: fit-content;
+    padding-top: 100px;
+    background-color: #ffffffde;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+#encyclopediaCard {
+    background-color: #ffffff;
+    width: 45%;
+    height: fit-content;
+    padding: 20px;
+    margin-bottom: 20px;
+    border: #bbbbbb 1px solid;
+    box-shadow: #636363 0 0 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+#encyclopediaCard .partTitle {
+    align-self: center;
+    font-size: 60px;
+}
+
+#encyclopediaCard img {
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    width: 90%;
+    align-self: center;
+    margin-bottom: 30px;
+}
+
+#encyclopediaCard .story {
+    font-family: sans-serif;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: justify;
+    text-indent: 50px;
+}
+
+#encyclopediaCard .story .partTitle {
+    margin-bottom: 10px;
+    font-size: 36px;
+    font-weight: bolder;
+    width: auto;
+    height: 40px;
+    border-bottom: #636363 1px solid;
+}
+
+#encyclopediaCard .story ul {
+    list-style-type: none;
+    color: #0062d3;
+}
+
+#stickyBar {
+    position: sticky;
+    top: 125px;
+    height: fit-content;
+    margin-top: 20px;
+}
+
+#stickyBar div {
+    font-size: 20px;
+    border-bottom: #bbbbbb 1px solid;
+}
+
+#stickyBar ul {
+    text-indent: 20px;
+    list-style-type: none;
+}
+
+#stickyBar ul li {
+    margin-top: 5px;
+    color: #636363;
+    font-weight: lighter;
+}
+
+footer {
+    height: 300px;
+    box-sizing: border-box;
+    padding: 10px;
+    background-color: #502400;
+    width: 100%;
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer .partTitle {
+    font-size: 32px;
+}
+
+footer div {
+    display: flex;
+}
+
+footer>div>div {
+    display: flex;
+    flex-direction: column;
+}
+
+footer .socialMedia img {
+    width: 40px;
+    height: 40px;
+}
