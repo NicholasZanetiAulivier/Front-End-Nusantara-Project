@@ -36,7 +36,8 @@ function processNavbarScroll(navbar) {
 
 function addEventListenerToFilterButton() {
     const height = $(`.filters`).innerHeight() + 10;
-    $(`#enableFilters`).on('click', () => {
+    $(`#enableFilters`).on('click', (e) => {
+        e.preventDefault();
         buttonState = !buttonState;
         $('#enableFiltersImg').attr(
             'src',
