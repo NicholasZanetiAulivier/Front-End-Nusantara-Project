@@ -17,7 +17,15 @@
             ],
             "references": [
                 "https://id.wikipedia.org/wiki/Suku_Dayak"
-            ]
+            ],
+            "tags": {
+                "weapon": [],
+                "dance": [],
+                "clothes": [],
+                "house": [],
+                "food": [],
+                "misc": []
+            }
         },
         {
             "name": "sunda",
@@ -61,7 +69,15 @@
                 "https://www.sukabumiupdate.com/life/113258/mengenal-jaipong-tarian-tradisional-khas-sunda-jawa-barat-yang-masih-lestari",
                 "https://id.wikipedia.org/wiki/Wayang_golek",
                 "https://kumparan.com/berita-hari-ini/mengenal-botram-budaya-makan-bersama-khas-suku-sunda-22Z1ROPvQeI/full"
-            ]
+            ],
+            "tags": {
+                "weapon": [],
+                "dance": [],
+                "clothes": [],
+                "house": [],
+                "food": [],
+                "misc": []
+            }
         },
         {
             "name": "bali",
@@ -103,7 +119,15 @@
                 "https://www.detik.com/bali/budaya/d-6644038/mengenal-tiga-jenis-tari-bali-berdasarkan-fungsi-dan-contohnya",
                 "https://id.wikipedia.org/wiki/Tari_Bali",
                 "https://id.wikipedia.org/wiki/Endek"
-            ]
+            ],
+            "tags": {
+                "weapon": [],
+                "dance": [],
+                "clothes": [],
+                "house": [],
+                "food": [],
+                "misc": []
+            }
         },
         {
             "name": "jawa",
@@ -148,7 +172,15 @@
                 "https://regional.kompas.com/read/2022/01/10/210857178/larung-sesaji-tujuan-makna-dan-waktu-palaksanaan?page=all",
                 "https://www.liputan6.com/hot/read/5365128/macam-macam-baju-adat-jawa-dan-kelengkapannya-ketahui-maknanya?page=3",
                 "https://id.wikipedia.org/wiki/Wayang_kulit"
-            ]
+            ],
+            "tags": {
+                "weapon": [],
+                "dance": [],
+                "clothes": [],
+                "house": [],
+                "food": [],
+                "misc": []
+            }
         }
     ]
 }

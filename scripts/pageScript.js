@@ -95,7 +95,7 @@ async function processData(json, suku) {
 
     let refList = $(`<ul></ul>`);
     for (let reference of data.references) {
-        let link = $(`<li><a href="${reference}">${reference}</a></li>`);
+        let link = $(`<li><a href="${reference}" target="_">${reference}</a></li>`);
         refList.append(link);
     }
 
