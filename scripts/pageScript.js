@@ -1,6 +1,6 @@
 async function main() {
-    // cleanTemplate();
-    let successful = processGetQuery();
+    cleanTemplate();
+    let successful = await processGetQuery();
 
     //Error code
     if (!successful) {
@@ -18,18 +18,106 @@ function noSukuFoundError() {
 
 function cleanTemplate() {
     $(`#encyclopediaCard`).empty();
-    $(`stickyBar`).empty();
+    $(`#stickyBar`).empty();
 }
 
-function processGetQuery() {
+async function processGetQuery() {
     let param = new URLSearchParams(window.location.search);
     let successful = false;
     if (param.has('suku')) {
         let suku = param.get('suku');
-        console.log(suku);
-        successful = true;
+
+        console.log(`Getting data for : ${suku}`);
+
+        await $.getJSON('data/data.json', (res) => {
+            successful = processData(res, suku);
+        }).fail(
+            (e) => {
+                console.log(e);
+            }
+        );
     }
     return successful;
+}
+
+async function processData(json, suku) {
+    let dictionary = json.dict;
+    console.log(dictionary);
+    let data = null;
+    for (let s of dictionary) {
+        if (s.name == suku) {
+            data = s;
+            console.log("data found");
+        }
+    }
+    if (data == null) {
+        return false;
+    }
+
+    let encyclopedia = $(`#encyclopediaCard`);
+    let stickyBar = $(`#stickyBar`);
+
+    let title = createTitle(`SUKU ${data.name.toUpperCase()}`);
+    let img = createImage(data.name, data.imgFormat);
+    let description = createDescription(data.description);
+
+    encyclopedia.append(title);
+    encyclopedia.append(img);
+    encyclopedia.append(description);
+
+    let stickyTitle = $(`<div>${title.text()}</div>`);
+    stickyBar.append(stickyTitle);
+
+    let stickyList = $(`<ul></ul>`);
+
+    for (let part of data.content) {
+        let story = createSubPart('', part.title);
+
+        let title = createTitle(part.title);
+        story.append(title);
+
+        for (let paragraph of part.paragraphs) {
+            let p = createParagraph(paragraph);
+            story.append(p);
+        }
+        encyclopedia.append(story);
+
+        let link = $(`<li></li>`).append(createLink(part.title, part.title));
+        stickyList.append(link);
+    }
+
+    stickyBar.append(stickyList);
+    return true;
+}
+
+function createTitle(str) {
+    return $(`<div class="partTitle">${str}</div>`);
+}
+
+function createImage(str, format) {
+    return $(`<img id="pagePicture" src="rsc/data/${str}.${format}">`);
+}
+
+function createDescription(desc) {
+    let sub = createSubPart('');
+
+    for (let p of desc) {
+        sub.append(createParagraph(p));
+    }
+
+    return sub;
+}
+
+function createParagraph(p) {
+    return $(`<p>${p}</p>`);
+}
+
+function createSubPart(sub, id) {
+    return $(`<div class="story" id="${id}">${sub}</div>`);
+}
+
+function createLink(text, link) {
+    return $(`<a href="#${link}">${text}</a>`);
 }
 
 main();
