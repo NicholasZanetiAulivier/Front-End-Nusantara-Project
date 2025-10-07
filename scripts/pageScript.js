@@ -87,6 +87,21 @@ async function processData(json, suku) {
     }
 
     stickyBar.append(stickyList);
+
+    let ref = createSubPart('', '');
+    let refTitle = createTitle('Referensi');
+
+    ref.append(refTitle);
+
+    let refList = $(`<ul></ul>`);
+    for (let reference of data.references) {
+        let link = $(`<li><a href="${reference}">${reference}</a></li>`);
+        refList.append(link);
+    }
+
+    ref.append(refList);
+    encyclopedia.append(ref);
+
     return true;
 }
 
@@ -99,7 +114,7 @@ function createImage(str, format) {
 }
 
 function createDescription(desc) {
-    let sub = createSubPart('');
+    let sub = createSubPart('', '');
 
     for (let p of desc) {
         sub.append(createParagraph(p));

@@ -83,6 +83,11 @@ a {
     text-indent: 50px;
 }
 
+#encyclopediaCard .story p {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
 #encyclopediaCard .story .partTitle {
     margin-bottom: 10px;
     font-size: 36px;
