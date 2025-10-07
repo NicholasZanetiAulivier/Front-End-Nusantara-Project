@@ -180,7 +180,7 @@ a {
     --height-size: 300px;
     display: flex;
     flex-direction: column;
-    justify-content: end;
+    justify-content: space-between;
     align-items: start;
     height: var(--height-size);
     width: var(--width-size);
