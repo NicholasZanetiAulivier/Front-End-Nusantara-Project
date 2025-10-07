@@ -147,7 +147,7 @@ a {
 
 #featured {
     width: 100vw;
-    height: 500px;
+    height: 425px;
     padding-top: 30px;
     background-color: #ffffffde;
     display: block;
@@ -180,7 +180,7 @@ a {
     --height-size: 300px;
     display: flex;
     flex-direction: column;
-    justify-content: end;
+    justify-content: space-between;
     align-items: start;
     height: var(--height-size);
     width: var(--width-size);
@@ -264,93 +264,24 @@ a {
 }
 
 
-/*Random Facts Container*/
+/*Random Banner Container*/
 
-#randomFacts {
-    background-color: #ffffffec;
-    height: fit-content;
+#randomBanner {
+    --height: 600px;
+    background-color: #58270ab6;
+    height: var(--height);
+    padding: 0;
     width: inherit;
+    overflow: hidden;
 }
 
-#randomFacts .partTitle {
-    display: block;
-    margin: auto;
-    padding-top: 30px;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-bottom: 5px;
-    font-size: 32px;
-    width: 1000px;
-    height: fit-content;
-    border-bottom: #000000 1px solid;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-weight: bold;
+#randomBanner img {
+    position: absolute;
+    height: var(--height);
+    mask-image: linear-gradient(to right, #000000e3, #00000000);
 }
 
-#randomFacts .facts {
-    width: auto;
-    height: fit-content;
-    margin-top: 30px;
-}
-
-#randomFacts .facts .row {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: fit-content;
-    margin: auto;
-    width: 100%;
-}
-
-#randomFacts .facts .row>div {
-    width: 650px;
-    height: 650px;
-    padding: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-#randomFacts .facts .row .left img {
-    aspect-ratio: 4/3;
-    object-fit: cover;
-    margin-bottom: 10px;
-    width: 100%;
-    border: #000000 1px solid;
-    border-radius: 20px;
-}
-
-#randomFacts .facts .row .left .description {
-    font-size: 18px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    line-height: 22px;
-    text-align: justify;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-}
-
-#randomFacts .facts .row .right {
-    justify-content: space-between;
-    align-items: center;
-}
-
-#randomFacts .facts .row .right .cell {
-    height: 210px;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    gap: 5px;
-}
-
-#randomFacts .facts .row .right .cell img {
-    height: 100%;
-    aspect-ratio: 4/3;
-    object-fit: cover;
-    border: #000000 1px solid;
-    border-radius: 20px;
-}
-
+/*Search, filter, sort, result*/
 #searchAndResults {
     --left-right-pad: 300px;
     padding-top: 10px;
@@ -503,10 +434,90 @@ a {
     border-left: #0000005b 1px solid;
     box-sizing: border-box;
     padding-left: 10px;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+}
+
+#results .nothingFound {
+    text-align: center;
+    flex-grow: 1;
+    height: 500px;
+    font-size: 32px;
+    font-family: 'Times New Roman', Times, serif;
+    color: #a1a1a1;
+    padding-top: 20px;
+}
+
+#results .item {
+    height: 200px;
+    width: auto;
+    padding: 5px;
+    box-sizing: border-box;
+    display: flex;
+}
+
+#results .item img {
+    height: 100%;
+    border: #000000 2px solid;
+    object-fit: cover;
+    aspect-ratio: 4/3;
+}
+
+#results .item .text {
+    padding-left: 20px;
+    flex-grow: 1;
+}
+
+#results .item .text .title {
+    font-weight: bold;
+    font-size: 32px;
+}
+
+#results .item .text p {
+    font-size: 14px;
+    line-height: 22px;
+    text-align: justify;
+}
+
+/* #results .item .attr {
+    box-sizing: border-box;
+    border-left: #0000005e 1px solid;
+    margin-left: 10px;
+    padding-left: 5px;
+} */
+
+#results .item .attr {
+    flex-grow: 1;
 }
 
 footer {
-    height: 200px;
+    height: 300px;
+    box-sizing: border-box;
+    padding: 10px;
     background-color: #502400;
     width: 100%;
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer .partTitle {
+    font-size: 32px;
+}
+
+footer div {
+    display: flex;
+}
+
+footer>div>div {
+    display: flex;
+    flex-direction: column;
+}
+
+footer .socialMedia img {
+    width: 40px;
+    height: 40px;
 }
