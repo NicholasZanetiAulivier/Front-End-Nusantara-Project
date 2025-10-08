@@ -7,6 +7,7 @@
 
     <link rel="stylesheet" href="style/fonts.css">
     <link rel="stylesheet" href="style/indexStyle.css">
+    <link rel="stylesheet" href="style/indexResponsive.css">
 
     <script type="text/javascript" src="scripts/jquery-3.7.1.min.js"></script>
     <script type="text/javascript" src="scripts/indexScript.js" defer></script>
@@ -19,7 +20,6 @@
             <li><a href="#featured">Featured</a></li>
             <li><a href="#randomFacts">Random</a></li>
             <li><a href="#search">Search</a></li>
-            <li><a href="blogPage.html?suku=woo">Hello</a></li>
         </ul>
     </div>
 
@@ -33,7 +33,7 @@
             <span>Keindahan Dunia</span>
             <span>Budaya Indonesia</span>
         </div>
-        <button id="goToSearch">Start Searching</button>
+        <a id="goToSearch" href="#searchAndResults">Start Searching</a>
     </div>
 
     <div id="featured">
@@ -42,10 +42,6 @@
             <a href="#">
                 <div class="items">
                     <img class="itemImage" src="https://www.selasar.com/wp-content/uploads/2020/07/Featured-image.jpg">
-                    <div class="tags">
-                        <div class="tag">Dayak</div>
-                        <div class="tag">Dayak</div>
-                    </div>
                     <div class="itemText">
                         <span class="itemTitle">Dayak</span>
                         <span class="itemDescription">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras
@@ -90,6 +86,18 @@
     <!-- remake this -->
     <div id="randomBanner">
         <img src="rsc/carousel_1.jpg" class="background">
+        <div class="left">
+            <span>Artikel Menarik</span>
+        </div>
+        <div class="partTitle">Suku Dayak</div>
+        <div class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras
+            eleifend
+            feugiat eleifend. Orci varius natoque penatibus et magnis dis parturient.</div>
+        <a>
+            <div>
+                Lanjutkan&#8658;
+            </div>
+        </a>
     </div>
 
     <form id="searchAndResults">
@@ -156,8 +164,16 @@
                     <img src="rsc/social_media/whatsapp.png">
                 </div>
             </div>
+            <div>
+                <ul>
+                    <li><a>Home</a></li>
+                    <li><a>About Us</a></li>
+                    <li><a>Blog</a></li>
+                    <li><a>News and Events</a></li>
+                </ul>
+            </div>
         </div>
-        <div>
+        <div class="credit">
             Made by Suku Search Team
         </div>
     </footer>

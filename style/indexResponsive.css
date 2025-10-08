@@ -1,0 +1,399 @@
+/*Size breakpoint*/
+@media only screen and (max-width:1400px) {
+    #results .item .text p {
+        font-size: 12px;
+        line-height: 18px;
+    }
+}
+
+/*Laptops*/
+@media only screen and (max-width:1250px) {
+    #featured {
+        height: 350px;
+        padding-top: 10px;
+    }
+
+    .featuredItems .items {
+        --width-size: 300px;
+        --height-size: 225px;
+    }
+
+    .featuredItems .items .itemText {
+        padding: 10px;
+    }
+
+    .featuredItems .items .itemTitle {
+        font-size: 40px;
+    }
+
+    #randomBanner {
+        --height: 500px;
+        padding-left: 52vw;
+        padding-right: 5vw;
+    }
+
+    #searchAndResults {
+        --left-right-pad: 5vw;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    #search .searchByName #searchInput {
+        font-size: 16px;
+    }
+
+    #search .searchByName #enableFilters {
+        height: 35px;
+    }
+
+    #search .filters .inputField {
+        width: 350px;
+    }
+
+    #search .filters .inputField label,
+    #search .filters .inputField input,
+    #search .filters .inputField div {
+        width: 200px;
+        font-size: 14px;
+    }
+
+    #results .item {
+        height: 20vw;
+    }
+
+    #results .item img {
+        width: 20vw;
+        height: 15vw;
+    }
+
+    #results .item .text .title {
+        font-size: 24px;
+    }
+
+    #results .item .text {
+        padding-left: 10px;
+    }
+
+}
+
+/*Tablets*/
+@media only screen and (max-width:992px) {
+    #navtitle img {
+        height: 40px;
+        padding: 1px;
+    }
+
+    #carousel {
+        --height: 500px;
+    }
+
+    #featured {
+        height: fit-content;
+    }
+
+    #featured .partTitle {
+        font-size: 7vw;
+    }
+
+    .featuredItems {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas:
+            "one two"
+            "one three";
+        padding-left: 12vw;
+        padding-right: 12vw;
+        padding-bottom: 5vw;
+        gap: 0;
+    }
+
+    .featuredItems>a {
+        padding: 0.5vw;
+    }
+
+    .featuredItems>a .items {
+        --width-size: 30vw;
+        --height-size: 22.5vw;
+    }
+
+    .featuredItems>a:nth-child(1) {
+        grid-area: one;
+    }
+
+    .featuredItems>a:nth-child(1) .items {
+        --width-size: 40vw;
+        --height-size: 30vw;
+    }
+
+    .featuredItems>a:nth-child(2) {
+        grid-area: two;
+    }
+
+    .featuredItems>a:nth-child(3) {
+        grid-area: three;
+    }
+
+    .featuredItems .items .itemTitle {
+        font-size: 3vw;
+    }
+
+    .featuredItems .items .itemDescription {
+        font-size: 1.3vw;
+    }
+
+    #randomBanner {
+        --height: 300px;
+    }
+
+    #randomBanner .left span {
+        font-size: 10vw;
+    }
+
+    #randomBanner .partTitle {
+        font-size: 7vw;
+    }
+
+    #randomBanner .description {
+        font-size: 2vw;
+    }
+
+    #searchAndResults {
+        min-height: 40vh;
+    }
+
+    #searchAndResults .partTitle {
+        font-size: 6vw;
+        text-align: center;
+    }
+
+    #searchAndResults .row {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #search .searchByName {
+        margin: auto;
+    }
+
+    #search .searchByName #searchInput {
+        font-size: 1.7vw;
+    }
+
+    #search .filters {
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+        height: fit-content;
+    }
+
+    #search .filters .inputField {
+        width: 40vw;
+    }
+
+    #search .filters .inputField label,
+    #search .filters .inputField input,
+    #search .filters .inputField div {
+        font-size: 1.5vw;
+    }
+
+
+    #results .item {
+        height: 20vw;
+    }
+
+    #results .item img {
+        width: 20vw;
+        height: 15vw;
+    }
+
+    #results .item .text .title {
+        font-size: 3vw;
+    }
+
+    #results .item .text p {
+        font-size: 1.4vw;
+    }
+}
+
+/*Phones, assume everything is vertical*/
+@media only screen and (max-width:600px) {
+    #navtitle img {
+        height: 10vw;
+        padding: 5px;
+    }
+
+    #topnavbar>ul {
+        display: none;
+    }
+
+    /*
+    #topnavbar>ul li a {
+        display: block;
+        height: fit-content;
+        width: fit-content;
+        cursor: pointer;
+        padding: 10px;
+    }*/
+
+    #carousel {
+        --height: 90vw;
+    }
+
+    #carousel div {
+        line-height: 10vw;
+    }
+
+    #carousel div span:first-of-type {
+        font-size: 10vw;
+    }
+
+    #carousel div span:last-of-type {
+        font-size: 13vw;
+    }
+
+    #carousel #goToSearch {
+        padding: 1.2vw;
+        font-size: 5vw;
+        top: 65vw;
+    }
+
+    #featured .partTitle {
+        display: none;
+    }
+
+    .featuredItems {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 2vw;
+    }
+
+    .featuredItems>a .items {
+        --width-size: 80vw;
+        --height-size: 60vw;
+    }
+
+    .featuredItems>a:nth-child(1) .items {
+        --width-size: 80vw;
+        --height-size: 60vw;
+    }
+
+    .featuredItems .items .itemTitle {
+        font-size: 10vw;
+    }
+
+    .featuredItems .items .itemDescription {
+        font-size: 3vw;
+    }
+
+    #randomBanner {
+        z-index: 1;
+        --height: 80vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
+
+    #randomBanner img {
+        object-fit: cover;
+        z-index: 0;
+        position: absolute;
+        mask: none;
+        filter: opacity(20%);
+        height: inherit;
+        width: 100vw;
+    }
+
+    #randomBanner .left {
+        position: relative;
+        height: fit-content;
+        width: 100vw;
+    }
+
+    #randomBanner .left span {
+        font-size: 10vw;
+    }
+
+    #randomBanner .partTitle {
+        font-size: 15vw;
+        z-index: 21;
+        text-shadow: #FFFFFF 0 0 3px;
+    }
+
+    #randomBanner .description {
+        z-index: 21;
+        font-size: 5vw;
+        box-sizing: border-box;
+        padding-left: 2vw;
+        padding-right: 2vw;
+        text-align: justify;
+    }
+
+    #randomBanner a {
+        align-self: center;
+        font-size: 4vw;
+    }
+
+    #searchAndResults .partTitle {
+        font-size: 8vw;
+    }
+
+    #search .searchByName {
+        margin: auto;
+    }
+
+    #search .searchByName #searchInput {
+        font-size: 3vw;
+        padding: 1vw;
+    }
+
+    #search .searchByName #enableFilters {
+        height: 6vw;
+    }
+
+    #search .filters {
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+        height: fit-content;
+        border-bottom: none;
+    }
+
+    #search .filters .inputField {
+        width: 100vw;
+    }
+
+    #search .filters .inputField label,
+    #search .filters .inputField input,
+    #search .filters .inputField div {
+        font-size: 3vw;
+    }
+
+
+    #results .item {
+        height: 40vw;
+    }
+
+    #results .item img {
+        width: 40vw;
+        height: 30vw;
+    }
+
+    #results .item .text .title {
+        font-size: 5vw;
+    }
+
+    #results .item .text p {
+        font-size: 2.4vw;
+        line-height: 3vw;
+    }
+
+    footer>div {
+        flex-direction: column;
+        margin-bottom: 2vw;
+    }
+}
