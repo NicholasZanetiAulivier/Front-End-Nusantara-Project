@@ -1,5 +1,3 @@
-let buttonState = true;
-let globalData = {};
 const search = $(`#searchInput`);
 const filters = {
     weapon: $(`#weapons`),
@@ -10,8 +8,11 @@ const filters = {
     misc: $(`#misc`),
 };
 
-let threeHundred = 300;
+let buttonState = true;
+let globalData = {};
+let littleDetailLimit = 300;
 let searchDescLimit = 400;
+let filterHeight;
 
 
 async function main() {
@@ -55,10 +56,13 @@ function addWindowResizeEvent() {
     $(window).on('resize', () => {
         width = $(window).width();
         if (width <= 1000) {
+            littleDetailLimit = 200;
             searchDescLimit = 200;
+
         } else if (width <= 1500) {
             searchDescLimit = 290;
         } else {
+            littleDetailLimit = 300;
             searchDescLimit = 400;
         }
 
@@ -137,7 +141,7 @@ function process3Randoms(randoms) {
         let img = $(`<img class="itemImage" src="rsc/data/${item.name}.${item.imgFormat}">`);
         let text = $(`<div class="itemText"></div>`);
         let textTitle = $(`<span class="itemTitle">${item.name[0].toUpperCase() + item.name.slice(1)}</span>`);
-        let textDescription = $(`<span class="itemDescription">${item.description[0].slice(0, threeHundred) + "..."}</span>`);
+        let textDescription = $(`<span class="itemDescription">${item.description[0].slice(0, littleDetailLimit) + "..."}</span>`);
 
         text.append(textTitle);
         text.append(textDescription);

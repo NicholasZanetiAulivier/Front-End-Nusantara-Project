@@ -402,8 +402,6 @@ a {
 #search .searchByName #searchInput {
     font-size: 18px;
     padding: 10px;
-    padding-left: 10px;
-    padding-right: 10px;
     border-radius: 5px;
 }
 
@@ -555,7 +553,7 @@ a {
 }
 
 footer {
-    height: 300px;
+    height: fit-content;
     box-sizing: border-box;
     padding: 10px;
     background-color: #502400;
@@ -569,18 +567,29 @@ footer {
 
 footer .partTitle {
     font-size: 32px;
+    font-family: 'Bavista';
+    margin-bottom: 20px;
 }
 
-footer div {
+footer>div {
     display: flex;
+    gap: 20px;
 }
 
-footer>div>div {
+footer>div>* {
     display: flex;
     flex-direction: column;
+}
+
+footer ul {
+    list-style: none;
 }
 
 footer .socialMedia img {
     width: 40px;
     height: 40px;
+}
+
+.credit {
+    color: #999999;
 }
