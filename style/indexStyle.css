@@ -121,22 +121,26 @@ a {
     margin: 0;
 }
 
-#carousel button {
+#carousel #goToSearch {
+    text-decoration: unset;
     position: absolute;
     z-index: 10;
     padding: 8px;
     font-size: 28px;
+    font-family: 'Berkshire';
+    text-shadow: #FFFFFF 1px 1px 2px;
     border-radius: 20px;
-    background-color: #502400;
+    background-image: radial-gradient(closest-side, #502400, #7a3e0d);
     border-style: solid;
     color: #FFFFFF;
     top: 400px;
-    transition: 0.2s ease-out;
+    transition: 0.5s ease-out;
 }
 
-#carousel button:hover {
-    background-color: #FFFFFF;
-    color: #502400;
+#carousel #goToSearch:hover {
+    text-shadow: #FFFFFF 0 0 5px;
+    box-shadow: #FFFFFF 0 0 5px;
+    transform: scale(110%);
 }
 
 #carousel button:active {
@@ -269,16 +273,71 @@ a {
 #randomBanner {
     --height: 600px;
     background-color: #58270ab6;
+    box-sizing: border-box;
+    padding-left: 50vw;
+    padding-right: 300px;
     height: var(--height);
-    padding: 0;
     width: inherit;
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-around;
+    color: #FFFFFF;
+}
+
+#randomBanner .left {
+    position: absolute;
+    height: var(--height);
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    left: 0;
 }
 
 #randomBanner img {
+    object-fit: cover;
+    left: 0;
     position: absolute;
-    height: var(--height);
-    mask-image: linear-gradient(to right, #000000e3, #00000000);
+    mask: linear-gradient(to right, #000000e3, #00000000);
+    height: inherit;
+    width: 50vw;
+}
+
+#randomBanner .left span {
+    display: block;
+    text-align: center;
+    font-size: 100px;
+    mask-image: none;
+    text-shadow: var(--onepx-shadow), #FFFFFF 0 0 20px;
+    font-family: 'Berkshire';
+    font-style: italic;
+}
+
+#randomBanner .partTitle {
+    font-size: 100px;
+    text-indent: 10px;
+    font-family: 'Bavista';
+    font-weight: bold;
+    text-shadow: var(--onepx-shadow);
+}
+
+#randomBanner .description {
+    font-size: 24px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #ffffffe7;
+    text-shadow: #FFFFFF 0 0 3px;
+}
+
+#randomBanner a {
+    align-self: flex-end;
+}
+
+#randomBanner a div {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-decoration: underline;
 }
 
 /*Search, filter, sort, result*/

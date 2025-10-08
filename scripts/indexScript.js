@@ -92,11 +92,17 @@ async function processData(data) {
         rand.push(randomIndex);
     }
 
+    let randomFocused;
+    do {
+        randomFocused = Math.floor(Math.random() * count);
+    } while (rand.includes(randomFocused));
+
     let round = []
     rand.forEach((val) => {
         round.push(dict[val]);
     })
     process3Randoms(round);
+    process1Focused(dict[randomFocused]);
 }
 
 function process3Randoms(randoms) {
@@ -122,6 +128,22 @@ function process3Randoms(randoms) {
 
         featured.append(bigLink);
     }
+}
+
+function process1Focused(item) {
+    let banner = $(`#randomBanner`).empty();
+
+    let img = $(`<img src="rsc/data/${item.name}.${item.imgFormat}" class="background">`);
+    let bigTitle = $(`<div class="left"><span>Artikel Menarik</span></div>`);
+    let partTitle = $(`<div class="partTitle">Suku ${item.name[0].toUpperCase() + item.name.slice(1)}</div>`);
+    let desc = $(`<div class="description">${item.description[0].slice(0, 400) + "..."}</div>`);
+    let cont = $(`<a href="blogPage.html?suku=${item.name}"><div>Lanjutkan&#8658;</div></a>`);
+
+    banner.append(img);
+    banner.append(bigTitle);
+    banner.append(partTitle);
+    banner.append(desc);
+    banner.append(cont);
 }
 
 async function setupSearchAndResults(data) {
