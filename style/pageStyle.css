@@ -52,7 +52,7 @@ a {
 
 #encyclopediaCard {
     background-color: #ffffff;
-    width: 45%;
+    width: 60%;
     height: fit-content;
     padding: 20px;
     margin-bottom: 20px;
@@ -65,6 +65,7 @@ a {
 #encyclopediaCard .partTitle {
     align-self: center;
     font-size: 60px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 #encyclopediaCard img {
@@ -126,7 +127,7 @@ a {
 }
 
 footer {
-    height: 300px;
+    height: fit-content;
     box-sizing: border-box;
     padding: 10px;
     background-color: #502400;
@@ -140,18 +141,29 @@ footer {
 
 footer .partTitle {
     font-size: 32px;
+    font-family: 'Bavista';
+    margin-bottom: 20px;
 }
 
-footer div {
+footer>div {
     display: flex;
+    gap: 20px;
 }
 
-footer>div>div {
+footer>div>* {
     display: flex;
     flex-direction: column;
+}
+
+footer ul {
+    list-style: none;
 }
 
 footer .socialMedia img {
     width: 40px;
     height: 40px;
+}
+
+.credit {
+    color: #999999;
 }
