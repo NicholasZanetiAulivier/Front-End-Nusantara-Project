@@ -1,0 +1,130 @@
+@media only screen and (max-width:1400px) {
+    #results .item .text p {
+        font-size: 12px;
+        line-height: 18px;
+    }
+}
+
+@media only screen and (max-width:1250px) {
+    #featured {
+        height: 350px;
+        padding-top: 10px;
+    }
+
+    .featuredItems .items {
+        --width-size: 300px;
+        --height-size: 225px;
+    }
+
+    .featuredItems .items .itemText {
+        padding: 10px;
+    }
+
+    .featuredItems .items .itemTitle {
+        font-size: 40px;
+    }
+
+    #randomBanner {
+        --height: 500px;
+        padding-left: 52vw;
+        padding-right: 5vw;
+    }
+
+    #searchAndResults {
+        --left-right-pad: 5vw;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    #search .searchByName #searchInput {
+        font-size: 16px;
+    }
+
+    #search .searchByName #enableFilters {
+        height: 35px;
+    }
+
+    #search .filters .inputField {
+        width: 350px;
+    }
+
+    #search .filters .inputField label,
+    #search .filters .inputField input,
+    #search .filters .inputField div {
+        width: 200px;
+        font-size: 14px;
+    }
+
+    #results .item {
+        height: 20vw;
+    }
+
+    #results .item img {
+        width: 20vw;
+        height: 15vw;
+    }
+
+    #results .item .text .title {
+        font-size: 24px;
+    }
+
+    #results .item .text {
+        padding-left: 10px;
+    }
+
+}
+
+@media only screen and (max-width:992px) {
+    #navtitle img {
+        height: 40px;
+        padding: 1px;
+    }
+
+    #carousel {
+        --height: 500px;
+    }
+
+    #featured {
+        height: fit-content;
+    }
+
+    .featuredItems {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas:
+            "one two"
+            "one three";
+        padding-left: 12vw;
+        padding-right: 12vw;
+        padding-bottom: 5vw;
+        gap: 0;
+    }
+
+    .featuredItems>a {
+        padding: 0.5vw;
+    }
+
+    .featuredItems>a .items {
+        --width-size: 30vw;
+        --height-size: 22.5vw;
+    }
+
+    .featuredItems>a:nth-child(1) {
+        grid-area: one;
+    }
+
+    .featuredItems>a:nth-child(1) .items {
+        --width-size: 40vw;
+        --height-size: 30vw;
+    }
+
+    .featuredItems>a:nth-child(2) {
+        grid-area: two;
+    }
+
+    .featuredItems>a:nth-child(3) {
+        grid-area: three;
+    }
+
+}

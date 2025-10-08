@@ -10,6 +10,9 @@ const filters = {
     misc: $(`#misc`),
 };
 
+let threeHundred = 300;
+let searchDescLimit = 400;
+
 
 async function main() {
     let data = getData();
@@ -18,9 +21,12 @@ async function main() {
     carousel[0].style.opacity = 1;
     doCarouselLoop(carousel);
 
+    addWindowResizeEvent();
+
     window.onscroll = () => processNavbarScroll($(`#topnavbar`)[0]);
     addEventListenerToFilterButton();
     await setupSearchAndResults(data);
+
 
     processData(data);
 }
@@ -43,6 +49,21 @@ async function doCarouselLoop(carousel) {
         carousel[counter].style.opacity = 1;
         console.log(counter);
     }, 5000);
+}
+
+function addWindowResizeEvent() {
+    $(window).on('resize', () => {
+        width = $(window).width();
+        if (width <= 1000) {
+            searchDescLimit = 200;
+        } else if (width <= 1500) {
+            searchDescLimit = 290;
+        } else {
+            searchDescLimit = 400;
+        }
+
+    });
+    $(window).trigger('resize');
 }
 
 const TOPNAVBAR_LIMIT = 150;
@@ -114,16 +135,14 @@ function process3Randoms(randoms) {
         bigLink.append(bigDiv);
 
         let img = $(`<img class="itemImage" src="rsc/data/${item.name}.${item.imgFormat}">`);
-        let tags = $(`<div class="tags"></div>`);
         let text = $(`<div class="itemText"></div>`);
         let textTitle = $(`<span class="itemTitle">${item.name[0].toUpperCase() + item.name.slice(1)}</span>`);
-        let textDescription = $(`<span class="itemDescription">${item.description[0].slice(0, 300) + "..."}</span>`);
+        let textDescription = $(`<span class="itemDescription">${item.description[0].slice(0, threeHundred) + "..."}</span>`);
 
         text.append(textTitle);
         text.append(textDescription);
 
         bigDiv.append(img);
-        bigDiv.append(tags);
         bigDiv.append(text);
 
         featured.append(bigLink);
@@ -136,7 +155,7 @@ function process1Focused(item) {
     let img = $(`<img src="rsc/data/${item.name}.${item.imgFormat}" class="background">`);
     let bigTitle = $(`<div class="left"><span>Artikel Menarik</span></div>`);
     let partTitle = $(`<div class="partTitle">Suku ${item.name[0].toUpperCase() + item.name.slice(1)}</div>`);
-    let desc = $(`<div class="description">${item.description[0].slice(0, 400) + "..."}</div>`);
+    let desc = $(`<div class="description">${item.description[0].slice(0, searchDescLimit) + "..."}</div>`);
     let cont = $(`<a href="blogPage.html?suku=${item.name}"><div>Lanjutkan&#8658;</div></a>`);
 
     banner.append(img);
@@ -187,7 +206,7 @@ function updateResults(data) {
         let img = $(`<img src="rsc/data/${i.name}.${i.imgFormat}">`);
         let text = $(`<div class="text"></div>`);
         let textTitle = $(`<div class="title">Suku ${i.name[0].toUpperCase() + i.name.slice(1)}</div>`);
-        let textDescription = $(`<p></p>`).text(i.description[0].slice(0, 400) + "...");
+        let textDescription = $(`<p></p>`).text(i.description[0].slice(0, searchDescLimit) + "...");
 
         text.append(textTitle);
         text.append(textDescription);

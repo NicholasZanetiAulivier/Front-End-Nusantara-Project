@@ -13,6 +13,7 @@
 html {
     overflow-x: hidden;
     width: 100vw;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -49,8 +50,10 @@ a {
 }
 
 #navtitle {
-    display: block;
+    display: flex;
+    align-items: center;
     cursor: pointer;
+    height: 100%;
 }
 
 #navtitle img {
@@ -275,7 +278,7 @@ a {
     background-color: #58270ab6;
     box-sizing: border-box;
     padding-left: 50vw;
-    padding-right: 300px;
+    padding-right: 10vw;
     height: var(--height);
     width: inherit;
     overflow: hidden;
@@ -342,7 +345,7 @@ a {
 
 /*Search, filter, sort, result*/
 #searchAndResults {
-    --left-right-pad: 300px;
+    --left-right-pad: 10vw;
     padding-top: 10px;
     padding-bottom: 10px;
     background-image: linear-gradient(to right, #ffffffda 0%, #FFFFFF 50%, #FFFFFFda 100%);
@@ -514,6 +517,7 @@ a {
     padding: 5px;
     box-sizing: border-box;
     display: flex;
+    align-items: center;
 }
 
 #results .item img {
