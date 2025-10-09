@@ -225,17 +225,40 @@
     }
 
     #topnavbar>ul {
-        display: none;
+        position: absolute;
+        flex-direction: column;
+        align-items: start;
+        background-image: url(../rsc/batik.jpg);
+        right: 0;
+        top: 12vw;
+        padding: 1vw;
+        width: 30vw;
+        height: 40vw;
+        transition: 0.5s ease-out;
+        opacity: 0;
     }
 
-    /*
+
     #topnavbar>ul li a {
-        display: block;
-        height: fit-content;
-        width: fit-content;
-        cursor: pointer;
-        padding: 10px;
-    }*/
+        font-size: 4vw;
+        padding: 0.5vw;
+        padding-left: 2vw;
+        text-shadow: #FFFFFF 0 0 20px;
+    }
+
+    .activator {
+        --height: 3vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: transparent;
+        border: none;
+        height: var(--height);
+    }
+
+    .activator img {
+        height: var(--height);
+    }
 
     #carousel {
         --height: 90vw;
@@ -291,7 +314,7 @@
 
     #randomBanner {
         z-index: 1;
-        --height: 80vw;
+        --height: 100vw;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -300,7 +323,7 @@
 
     #randomBanner img {
         object-fit: cover;
-        z-index: 0;
+        z-index: -100;
         position: absolute;
         mask: none;
         filter: opacity(20%);
@@ -373,6 +396,9 @@
         font-size: 3vw;
     }
 
+    #results {
+        padding-left: 1vw;
+    }
 
     #results .item {
         height: 40vw;
