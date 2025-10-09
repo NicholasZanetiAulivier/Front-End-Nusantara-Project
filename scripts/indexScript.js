@@ -57,6 +57,8 @@ function addWindowResizeEvent() {
         width = $(window).width();
         if (width <= 600) {
             $(`#topnavbar ul`).css('opacity', linksActivated ? "100%" : 0);
+            littleDetailLimit = 200;
+            searchDescLimit = 200;
         }
         else if (width <= 1000) {
             $(`#topnavbar ul`).css('opacity', "100%");
