@@ -7,7 +7,7 @@ const filters = {
     food: $(`#food`),
     misc: $(`#misc`),
 };
-
+let linksActivated = false;
 let buttonState = true;
 let globalData = {};
 let littleDetailLimit = 300;
@@ -55,7 +55,11 @@ async function doCarouselLoop(carousel) {
 function addWindowResizeEvent() {
     $(window).on('resize', () => {
         width = $(window).width();
-        if (width <= 1000) {
+        if (width <= 600) {
+            $(`#topnavbar ul`).css('opacity', linksActivated ? "100%" : 0);
+        }
+        else if (width <= 1000) {
+            $(`#topnavbar ul`).css('opacity', "100%");
             littleDetailLimit = 200;
             searchDescLimit = 200;
 
@@ -74,14 +78,25 @@ const TOPNAVBAR_LIMIT = 150;
 function processNavbarScroll(navbar) {
     if (!(document.body.scrollTop > TOPNAVBAR_LIMIT || document.documentElement.scrollTop > TOPNAVBAR_LIMIT)) {
         navbar.style.top = "0";
+        if ($(window).width() <= 600) $(`#topnavbar ul`).css('opacity', linksActivated ? "100%" : 0);
     } else {
         navbar.style.top = `-${TOPNAVBAR_LIMIT}px`;
+        if ($(window).width() <= 600) $(`#topnavbar ul`).css('opacity', 0);
     }
 }
 
 function addEventListenerToFilterButton() {
     $(`button`).on('click', (e) => {
         e.preventDefault();
+    })
+
+    $(`.activator`).on('click', (e) => {
+        linksActivated = !linksActivated;
+        if (linksActivated) {
+            $(`#topnavbar ul`).css('opacity', "100%");
+        } else {
+            $(`#topnavbar ul`).css('opacity', 0);
+        }
     })
 
     const height = $(`.filters`).innerHeight() + 10;
