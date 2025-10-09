@@ -4,7 +4,7 @@
             "name": "dayak",
             "imgFormat": "jpg",
             "description": [
-                "Suku Dayak adalah suku bangsa atau kelompok multi etnik yang mendiami pedalaman Pulau Kalimantan terutama digunakan di wilayah di Indonesia, tapi tidak digunakan untuk istilah etnik di wilayah Malaysia dan Brunei yang menggunakan etnik lebih spesifik yakni iban, bidayuh, melanau, kadazan, dusun, murut, kadayan, tutong, bisaya, belait dan sebagainya. Kata \"daya\" serumpun dengan misalnya kata \"raya\" dalam nama \"Toraya\" yang berarti \"orang (di) atas, orang hulu\""
+                "Berdasarkan bukti-bukti arkeologis yang ditemukan di Gua Niah (Sarawak) dan Gua Babi (Kalimantan Selatan), penghuni pertama Kalimantan memiliki ciri-ciri Austro-Melanesia, dengan proporsi tulang kerangka yang lebih besar dibandingkan dengan penghuni Kalimantan masa kini yang mendiami Pulau Kalimantan (Brunei Darussalam, Malaysia yang terdiri dari Sabah dan Sarawak, serta Indonesia yang terdiri dari Kalimantan Barat, Kalimantan Timur, Kalimantan Tengah, Kalimantan Utara, dan Kalimantan Selatan). Ada 3 suku pokok atau 5 suku asli Kalimantan yaitu Melayu, Dayak, Banjar, Kutai, dan Tidung."
             ],
             "content": [
                 {
@@ -13,6 +13,18 @@
                         "Istilah \"Dayak\" paling umum digunakan untuk menyebut orang-orang asli non-Muslim, non-Melayu yang tinggal di pulau itu. Ini terutama berlaku di Malaysia, karena di Indonesia ada suku-suku Dayak yang Muslim namun tetap termasuk kategori Dayak walaupun beberapa di antaranya disebut dengan Suku Banjar dan Suku Kutai. Terdapat beragam penjelasan tentang etimologi istilah ini. Menurut Lindblad, kata Dayak berasal dari kata daya dari bahasa Kenyah, yang berarti hulu sungai atau pedalaman. King, lebih jauh menduga-duga bahwa Dayak mungkin juga berasal dari kata darat, sebuah kata dari bahasa Melayu yang merujuk ke daratan tinggi yang mana kontras dengan wilayah tempat tinggal Melayu yang cenderung pada pesisir sungai dan pantai. Dia juga yakin bahwa kata itu mungkin berasal dari sebuah istilah dari bahasa Jawa Tengah yang berarti perilaku yang tak sesuai atau yang tak pada tempatnya",
                         "Arti dari kata \"Dayak\" itu sendiri masih bisa diperdebatkan. Commans (1987), misalnya, menulis bahwa menurut sebagian pengarang, \"Dayak\" berarti manusia, sementara pengarang lainnya menyatakan bahwa kata itu berarti pedalaman. Commans mengatakan bahwa arti yang paling tepat adalah orang yang tinggal di hulu sungai. Dengan nama serupa, Lahajir et al. melaporkan bahwa orang-orang Iban menggunakan istilah Dayak dengan arti manusia, sementara orang-orang Tunjung dan Benuaq mengartikannya sebagai hulu sungai. Mereka juga menyatakan bahwa sebagian orang mengklaim bahwa istilah Dayak menunjuk pada karakteristik personal tertentu yang diakui oleh orang-orang Kalimantan, yaitu kuat, gagah, berani dan ulet. Lahajir et al. mencatat bahwa setidaknya ada empat istilah untuk penuduk asli Kalimantan dalam literatur, yaitu Daya, Dyak, Daya, dan Dayak. Penduduk asli itu sendiri pada umumnya tidak mengenal istilah-istilah ini dan tidak menyebut diri mereka sebagai Dayak, akan tetapi orang-orang di luar lingkup merekalah yang menyebut mereka sebagai \"Dayak\"."
                     ]
+                },
+                {
+                    "title": "Sub Suku",
+                    "paragraphs": [
+                        "Kelompok Suku Dayak yang terdiri dari 6 suku besar lalu dalam sub-sub suku yang kurang lebih jumlahnya 405 sub . Masing-masing sub suku Dayak di pulau Kalimantan mempunyai adat istiadat dan budaya yang mirip, merujuk kepada sosiologi kemasyarakatannya dan perbedaan adat istiadat, budaya, maupun bahasa yang khas. Masa lalu masyarakat yang kini disebut suku Dayak, mendiami daerah pesisir pantai dan sungai-sungai di tiap-tiap pemukiman mereka. "
+                    ]
+                },
+                {
+                    "title": "Agama",
+                    "paragraphs": [
+                        "Sebagian kecil suku dayak masih menganut agama Kaharingan yang memiliki ciri khas adanya pembakaran tulang (Ijambe) dalam ritual penguburan sekunder, namun adapula ritual kematian lainnya yang disebut Tiwah, Wara, Kwangkey, Dallo, dan lain-lain. Masyarakat Dayak Meratus di Kalimantan Selatan lebih menekankan ritual dalam kehidupan terutama upacara/ritual pertanian maupun pesta panen. Kerajaan Tanjung Pematang Sawang adalah kerajaan Kaharingan yang didirikan oleh Suku Dayak Ngaju, selain itu juga ada Kerajaan Nan Sarunai yang merupakan kerajaan Kaharingan dan didirikan oleh suku Dayak Maanyan. Dalam sejarahnya, Kerajaan Nan Sarunai dipercaya pernah diserang oleh kerajaan Majapahit dari pulau Jawa, dan kejadian ini divalidkan oleh Suku Maanyan dengan nyanyian kidung yang sampai saat ini dikenal dengan istilah \"Wadian\"(nyanyian ratap tangis) untuk meratapi hancurnya Nan Sarunai akibat Majapahit. Sejak saat itu munculah istilah \"Nan Sarunai Usak Jawa\" dikalangan suku dayak Maanyan, yang artinya \"Nan Sarunai dirusak oleh (suku) Jawa\". "
+                    ]
                 }
             ],
             "references": [
@@ -20,11 +32,102 @@
             ],
             "tags": {
                 "weapon": [],
-                "dance": [],
+                "dance": [
+                    "tari gantar",
+                    "tari hudoq",
+                    "tari giring-giring"
+                ],
                 "clothes": [],
                 "house": [],
                 "food": [],
                 "misc": []
+            }
+        },
+        {
+            "name": "tengger",
+            "imgFormat": "jpg",
+            "description": [
+                "Suku Tengger atau lazim disebut Orang Jawa Tengger atau juga disebut Wong Tengger atau Wong Brama adalah etnis Jawa yang mendiami dataran tinggi sekitaran kawasan pegunungan Bromo-Tengger-Semeru, Jawa Timur, Indonesia. Penduduk suku Tengger menempati sebagian wilayah Kabupaten Probolinggo, Kabupaten Pasuruan, Kabupaten Lumajang, dan Kabupaten Malang."
+            ],
+            "content": [
+                {
+                    "title": "Budaya",
+                    "paragraphs": [
+                        "Bagi suku Jawa Tengger, Gunung Bromo atau Gunung Brahma dipercaya sebagai gunung suci. Setahun sekali masyarakat Tengger mengadakan upacara Yadnya Kasada atau Kasodo. Upacara ini bertempat di sebuah pura yang berada di bawah kaki Gunung Bromo utara yakni Pura Luhur Poten Bromo dan dilanjutkan ke puncak gunung Bromo. Sebelum didirikan pura di tempat tersebut hanyalah pelataran dari semen, tempat seluruh dukun pandhita se-Tengger melakukan Upacara Kasadha. Upacara diadakan pada tengah malam hingga dini hari setiap bulan purnama sekitar tanggal 14 atau 15 pada bulan kasada (keduabelas) menurut penanggalan Tengger. "
+                    ]
+                },
+                {
+                    "title": "Upacara Adat: Pujian Karo",
+                    "paragraphs": [
+                        "Dilaksanakan pada bulan ke-2 (bulan Karo) sejak tanggal ke-7 hingga ke-22. Termasuk salah satu upacara besar untuk memperingati terjadinya dualitas di dunia terutama laki-laki dan wanita, baik dan buruk. Makna lainnya, terutama di desa Ngadas Malang adalah untuk memperingati perseteruan abdi Ajisaka dan Nabi Muhammad, dan secara umum memperingati hubungan Buddha dan Islam (dalam Hefner, 1980). Puncak upacara dilakukan pada tanggal ke-15 saat bulan purnama. Pelaksanaan di tiap desa Tengger berbeda-beda. Orang Tengger di Pasuruan (Brang Kulon) melaksanakan Tari Sodoran yang diikuti beberapa desa namun dipusatkan di satu desa. Orang Tengger Probolinggo khusus di desa Ngadisari, Wonotoro, dan Jetak melakukan Tari Sodoran bersama. Satu desa secara bergantian menjadi tuan rumah sementara dua desa lain menjadi pengantin laki-laki dan perempuan (yang diperankan oleh masing-masing kepala desa). Tari sodoran adalah tati yang menyimbolkan hubungan intim antara suami dan istri. Desa Ngadirejo, Ngadas, dan Wonokerto juga melakukan tradisi ini, tetapi karena penduduk desa Wonokerto telah menganut Islam dan tidak melakukan adat Tengger lagi maka tari sodoran ketiga desa tersebut sudah tidak dilakukan. Sementara itu desa-desa sisanya tidak melakukan tari sodoran, tetapi melaksanakan doa bersama yang disebut banten gede di rumah masing-masing kepala desa. Upacara ini kemudian ditutup debgan nyadran (berziarah dan makan bersama di makam desa) pada tanggal 22 bulan Karo. "
+                    ]
+                },
+                {
+                    "title": "Upacara Adat: Kasada",
+                    "paragraphs": [
+                        "Upacara Kasada merupakan hari raya bagi masyarakat Tengger penganut ajaran Hindu Dharma. Yadnya Kasada dilakukan pada pada hari ke-14 bulan Kasada dengan menggelar sesembahan berupa sesaji kepada Sang Hyang Widhi, sebagai manifestasi dari Batara Brahma.Pelaksanaan Upacara Kasada dilakukan dalam beberapa tahap, yaitu puja Purkawa, Manggala upacara, Ngulat umat, Tri Sandiya, Muspa, Pembagian Bija, Diksa Widhi, dan penyerahan sesaji di kawah Bromo. Proses upacara dimulai pada Sadya Kala Puja dan berakhir pada Surya Puja. Masyarakat Tengger beramai-ramai menuju Gunung Bromo untuk mengantarkan sesaji berupa hasil ternak dan pertanian ke Pura Luhur Poten Agung. Selama pelaksanaan, Rama Dukun Pandita akan membaca Japa Mantera, yang isinya mendoakan keselamatan seluruh alam semesta."
+                    ]
+                }
+            ],
+            "references": [
+                "https://id.wikipedia.org/wiki/Suku_Tengger",
+                "https://surabaya.kompas.com/read/2022/10/20/215824778/mengenal-suku-tengger-dari-asal-usul-hingga-tradisi?page=all"
+            ],
+            "tags": {
+                "weapon": [],
+                "dance": [],
+                "clothes": [],
+                "house": [],
+                "food": [],
+                "misc": [
+                    "gunung brumo",
+                    "kasada",
+                    "pujian karo"
+                ]
+            }
+        },
+        {
+            "name": "batak",
+            "imgFormat": "jpg",
+            "description": [
+                "Suku Batak merupakan kelompok etnik terbesar ketiga di Indonesia berdasarkan sensus dari Badan Pusat Statistik pada tahun 2010. Nama ini merupakan sebuah istilah kolektif untuk mengidentifikasikan beberapa suku bangsa yang bermukim dan berasal dari provinsi Sumatera Utara. Suku bangsa yang termasuk sebagai Batak adalah Angkola, Karo, Mandailing, Pakpak-Dairi, Simalungun, dan Toba."
+            ],
+            "content": [
+                {
+                    "title": "Sejarah",
+                    "paragraphs": [
+                        "Suku Batak berasal dari provinsi Sumatera Utara. Sekitar 2.000 tahun SM, wilayah Sumatera Utara telah dihuni oleh orang-orang yang bermigrasi dari Cina bagian selatan atau orang Proto Melayu dan Deutro Melayu. Mereka bermukim di dataran tinggi di sekitar Danau Toba. Kelompok tersebut mulai membuat permukiman di Sianjur yang kemudian berkembang dan menyebar ke wilayah di sekitarnya. Setelah hidup dalam satu permukiman dan membentuk suatu kelompok masyarakat, kerajaan-kerajaan kecil pun terbentuk. Masing-masing memiliki sistem pemerintahan dan hukum adatnya sendiri."
+                    ]
+                },
+                {
+                    "title": "Budaya",
+                    "paragraphs": [
+                        "Suku Batak memiliki Tradisi Mangulosi, yakni acara pemberian kain tenun khas Batak yang diberi nama ulos. Oleh masyarakat Batak, kain ulos mempunyai makna pemberian perlindungan dari segala cuaca dan keadaan. Biasanya, orang yang mangulosi adalah sosok yang dituakan dalam adat Batak atau disebut hula-hula. Selain Tradisi Mangulosi, Suku Batak dikenal memiliki tari tor-tor, yang dipertunjukkan dalam berbagai acara, seperti pernikahan, ritual keagamaan, dan menyambut tamu. Dalam berbagai macam acara tersebut, biasanya dimainkan alat musik Suku Batak sejenis gamelan yang disebut dengan lima taganing."
+                    ]
+                },
+                {
+                    "title": "Rumah Adat",
+                    "paragraphs": [
+                        "Suku Batak memiliki rumah adat bernama Rumah Bolon, yang bermakna rumah besar, karena ukurannya memang cukup besar. Rumah adat ini adalah simbol status sosial masyarakat Batak yang tinggal di Sumatera Utara. Rumah Bolon berbentuk panggung, yang didirikan di atas tiang kayu atau balok kayu sebagai penyangga. Dindingnya terbuat dari kayu dan berbentuk miring, yang ukurannya semakin ke atas akan dibuat semakin lebar. Pada dinding bagian atas juga terdapat ukiran khas Sumatera Utara. Rumah Bolon umumnya memiliki panjang antara 10-20 meter dan atapnya berbentuk segitiga. Di bawahnya terdapat kolong setinggi sekitar dua meter yang digunakan untuk memelihara hewan ternak. Untuk menuju pintu rumah, dibangun sebuah tangga dengan jumlah anak tangganya selalu ganjil."
+                    ]
+                }
+            ],
+            "references": [
+                "https://id.wikipedia.org/wiki/Suku_Batak",
+                "https://www.goodnewsfromindonesia.id/2024/07/17/mengenal-lebih-dekat-suku-batak-dari-sejarah-hingga-kebudayaannya",
+                "https://www.kompas.com/stori/read/2021/10/20/080000879/suku-batak--bahasa-agama-marga-dan-kebudayaan?page=all"
+            ],
+            "tags": {
+                "weapon": [],
+                "dance": [],
+                "clothes": [],
+                "house": [
+                    "rumah bolon"
+                ],
+                "food": [],
+                "misc": [
+                    "mangulosi"
+                ]
             }
         },
         {
@@ -72,11 +175,16 @@
             ],
             "tags": {
                 "weapon": [],
-                "dance": [],
+                "dance": [
+                    "tari jaipong"
+                ],
                 "clothes": [],
                 "house": [],
                 "food": [],
-                "misc": []
+                "misc": [
+                    "wayang golek",
+                    "botram"
+                ]
             }
         },
         {
@@ -122,11 +230,20 @@
             ],
             "tags": {
                 "weapon": [],
-                "dance": [],
+                "dance": [
+                    "tari wali",
+                    "tari bebali",
+                    "tari balih-balihan"
+                ],
                 "clothes": [],
-                "house": [],
+                "house": [
+                    "aling-aling"
+                ],
                 "food": [],
-                "misc": []
+                "misc": [
+                    "tenun endek",
+                    "ngaben"
+                ]
             }
         },
         {
@@ -174,12 +291,18 @@
                 "https://id.wikipedia.org/wiki/Wayang_kulit"
             ],
             "tags": {
-                "weapon": [],
+                "weapon": [
+                    "keris"
+                ],
                 "dance": [],
                 "clothes": [],
                 "house": [],
                 "food": [],
-                "misc": []
+                "misc": [
+                    "wayang kulit",
+                    "jawi jangkep",
+                    "larung sesaji"
+                ]
             }
         }
     ]
